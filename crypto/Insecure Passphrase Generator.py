@@ -4,7 +4,7 @@ words = [
     "sogno", "giorno", "libro", "porta", "luce", "ombra", "silenzio", "fiore", "luna"
 ]
 
-passphrase_str = "fiume-amico-casa-mare-{-amico-tempo-viaggio-mare-_-sole-tempo-montagna-giorno-viaggio-libro-_-sorriso-montagna-casa-viaggio-_-giorno-montagna-notte-porta-sogno-montagna-_-mare-vento-fiume-pioggia-vento-sorriso-libro-notte-}"
+passphrase_str = "fiume-amico-casa-mare-{-amico-tempo-viaggio-mare-_-sole-tempo-montagna-giorno-viaggio-libro-_-sorriso-montagna-casa-viaggio-_-giorno-montagna-notte-porta-sogno-montagna-_-vento-notte-fiume-luna-nuvola-strada-luna-luce-}"
 
 decoded_chars = []
 for part in passphrase_str.split('-'):
